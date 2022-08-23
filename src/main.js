@@ -9,7 +9,7 @@ let string = `
 #heart {
     width: 200px;
     height: 170px;
-    
+    left: 18%;
 }
 /* 然后我准备一个心心的左上角 */
 #left {
@@ -35,15 +35,15 @@ let string = `
     transform: rotate(45deg);
 }
 /* 然后我让这个“心动”起来 */
-#heart {
+#fidex {
     animation:heart 800ms infinite alternate;
 }
 @keyframes heart {
     0% {
-        transform: scale(1.0);
+    transform: scale(1.0);
     }
     100% {
-        transform: scale(1.3);
+    transform: scale(1.5);
     }
 }
 /*

@@ -107,7 +107,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 var html = document.querySelector('#html');
 var style = document.querySelector("#style");
 
-var string = "\n/* hi\uFF0C\u81ED\u72D7\u2665\n * \u63A5\u4E0B\u6765\u6211\u8981\u9001\u4F60\u4E00\u4E2A\u5C0F\u5FC3\u5FC3\n * \u9996\u5148\u6211\u8981\u51C6\u5907\u4E00\u4E2A\u770B\u4E0D\u89C1\u7684\u5927\u76D2\u5B50\u6765\u88C5\u201C\u5C0F\u5FC3\u5FC3\u201D\n **/\n#heart {\n    width: 200px;\n    height: 170px;\n    \n}\n/* \u7136\u540E\u6211\u51C6\u5907\u4E00\u4E2A\u5FC3\u5FC3\u7684\u5DE6\u4E0A\u89D2 */\n#left {\n    background:red;\n    width: 100px;\n    height: 100px;\n    border-radius: 50%;\n    transform: rotate(45deg) translateX(21px)\n}\n/* \u63A5\u4E0B\u6765 \u51C6\u5907\u5FC3\u5FC3\u7684\u53F3\u4E0A\u89D2 */\n#right {\n    width: 100px;\n    height: 100px;\n    background:red;\n    border-radius: 50%;\n    transform: rotate(45deg) translateY(21px)\n}\n/* \u7136\u540E\u5728\u4E0B\u9762\u753B\u4E00\u4E2A\u6B63\u65B9\u5F62*/\n#bottom {\n    width: 100px;\n    height: 100px;\n    background:red;\n    transform: rotate(45deg);\n}\n/* \u7136\u540E\u6211\u8BA9\u8FD9\u4E2A\u201C\u5FC3\u52A8\u201D\u8D77\u6765 */\n#heart {\n    animation:heart 800ms infinite alternate;\n}\n@keyframes heart {\n    0% {\n        transform: scale(1.0);\n    }\n    100% {\n        transform: scale(1.3);\n    }\n}\n/*\n *okk\n *\u73B0\u5728\uFF0C\u4E00\u4E2A\u5C5E\u4E8E\u4F60\u7684\u5C0F\u5FC3\u5FC3\u5C31\u505A\u597D\u5566\n *\u2665\u7231\u4F60\u54E6\uFF01\u2665\n**/\n";
+var string = "\n/* hi\uFF0C\u81ED\u72D7\u2665\n * \u63A5\u4E0B\u6765\u6211\u8981\u9001\u4F60\u4E00\u4E2A\u5C0F\u5FC3\u5FC3\n * \u9996\u5148\u6211\u8981\u51C6\u5907\u4E00\u4E2A\u770B\u4E0D\u89C1\u7684\u5927\u76D2\u5B50\u6765\u88C5\u201C\u5C0F\u5FC3\u5FC3\u201D\n **/\n#heart {\n    width: 200px;\n    height: 170px;\n    left: 18%;\n}\n/* \u7136\u540E\u6211\u51C6\u5907\u4E00\u4E2A\u5FC3\u5FC3\u7684\u5DE6\u4E0A\u89D2 */\n#left {\n    background:red;\n    width: 100px;\n    height: 100px;\n    border-radius: 50%;\n    transform: rotate(45deg) translateX(21px)\n}\n/* \u63A5\u4E0B\u6765 \u51C6\u5907\u5FC3\u5FC3\u7684\u53F3\u4E0A\u89D2 */\n#right {\n    width: 100px;\n    height: 100px;\n    background:red;\n    border-radius: 50%;\n    transform: rotate(45deg) translateY(21px)\n}\n/* \u7136\u540E\u5728\u4E0B\u9762\u753B\u4E00\u4E2A\u6B63\u65B9\u5F62*/\n#bottom {\n    width: 100px;\n    height: 100px;\n    background:red;\n    transform: rotate(45deg);\n}\n/* \u7136\u540E\u6211\u8BA9\u8FD9\u4E2A\u201C\u5FC3\u52A8\u201D\u8D77\u6765 */\n#fidex {\n    animation:heart 800ms infinite alternate;\n}\n@keyframes heart {\n    0% {\n    transform: scale(1.0);\n    }\n    100% {\n    transform: scale(1.5);\n    }\n}\n/*\n *okk\n *\u73B0\u5728\uFF0C\u4E00\u4E2A\u5C5E\u4E8E\u4F60\u7684\u5C0F\u5FC3\u5FC3\u5C31\u505A\u597D\u5566\n *\u2665\u7231\u4F60\u54E6\uFF01\u2665\n**/\n";
 var string2 = "";
 var n = 0;
 
@@ -160,7 +160,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '52635' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '51476' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
